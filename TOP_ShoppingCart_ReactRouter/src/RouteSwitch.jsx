@@ -4,7 +4,7 @@ import App from './App';
 
 const RouteSwitch = () => {
 	return (
-		<BrowserRouter basename="TOP_react_router_lesson">
+		<BrowserRouter basename="TOP_ShoppingCart_ReactRouter">
 			<Routes>
 				<Route
 					path="/"
