@@ -22,12 +22,11 @@ const router = createBrowserRouter(
 			<Route
 				path="catalog"
 				element={<Catalog />}
-			>
-				<Route
-					path="catalog/:id"
-					element={<Product />}
-				/>
-			</Route>
+			/>
+			<Route
+				path="catalog/:id"
+				element={<Product />}
+			/>
 			<Route
 				path="cart"
 				element={<Cart />}

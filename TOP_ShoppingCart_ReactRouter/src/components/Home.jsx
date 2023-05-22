@@ -3,11 +3,15 @@ import forgetfulnessReasons from '../forgetReason';
 import commonlyMisplacedItems from '../forgetItem';
 import randomPlaceForget from '../../utils';
 
+/* const activeIndex = setIndex(Math.floor(Math.random() * commonlyMisplacedItems.length));
+const [index, setIndex] = useState(0); */
+
+/* useEffect(() => {
+		console.log(activeIndex);
+		//randomPlaceForget(forgetfulnessReasons, activeIndex, 'red', 300);
+	}, []); */
+
 function Home() {
-	const [index, setIndex] = useState(0);
-
-	const activeIndex = setIndex(Math.floor(Math.random() * commonlyMisplacedItems.length));
-
 	return (
 		<div className="home--cont">
 			<div className="home--left">
@@ -22,8 +26,3 @@ function Home() {
 }
 
 export default Home;
-
-/* useEffect(() => {
-		console.log(activeIndex);
-		//randomPlaceForget(forgetfulnessReasons, activeIndex, 'red', 300);
-	}, []); */
