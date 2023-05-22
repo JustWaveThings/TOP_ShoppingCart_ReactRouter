@@ -1,9 +1,18 @@
+:root {
+	--blue-accent-color: rgb(129, 238, 238);
+}
+
 #root {
 	font-family: 'Inter', sans-serif;
 	margin: 0;
 	padding: 0;
 	height: 100dvh;
 	width: 100dvw;
+	background-color: black;
+	color: white;
+	opacity: 0.9;
+	display: flex;
+	flex-direction: column;
 }
 
 @font-face {
@@ -11,23 +20,110 @@
 	src: local('Sans Forgetica Regular'), url('./assets/SansForgetica-Regular.woff') format('woff');
 }
 
-div {
-	background-color: black;
-	color: white;
-	opacity: 0.9;
-	font-size: 3rem;
-	font-family: 'Sans Forgetica Regular';
-	display: flex;
-	flex-direction: column;
-}
-
-.header-cont {
+.header--cont {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
+	padding: 1rem 2rem;
 	font-family: 'Sans Forgetica Regular';
+	background-color: var(--blue-accent-color);
+	color: black;
+	text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+.header--cont--left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 1rem;
+}
+
+.header--title {
+	font-size: 3rem;
+}
+.header--subtitle {
+	font-size: 1.5rem;
+	opacity: 0.9;
+}
+
+.header--cont--center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	flex-grow: 1;
+	padding: 1rem;
+	font-family: 'Inter', sans-serif;
+	color: black;
+	text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+}
+
+.header--cont--right {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin-left: auto;
+	margin-right: 2rem;
+	font-family: 'Inter', sans-serif;
+	font-size: 1.5rem;
+	text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+}
+
+.footer--cont {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	gap: 0.5rem;
+	color: white;
+	background-color: black;
+	opacity: 0.8;
+}
+.home--cont {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.home--left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	background-color: pink;
+}
+
+.home--right {
+	display: flex;
+	align-items: center;
+	flex-grow: 4;
+	background-color: pink;
+}
+
+.home--forget--cont {
+	position: relative;
+	height: max-content;
+}
+
+.home--random--item {
+	position: absolute;
+}
+
+.home--forget--cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	background-color: pink;
 }
 
 .not-found__cont {
@@ -38,6 +134,7 @@ div {
 	justify-content: center;
 	align-items: center;
 	flex-grow: 1;
+	background-color: black;
 }
 
 .not-found__split {
@@ -47,7 +144,8 @@ div {
 	align-items: center;
 	flex-grow: 1;
 	gap: 2rem;
-	margin: 2rem;
+
+	margin: 2rem 2rem 2rem 0rem;
 }
 
 .not-found__left {
@@ -56,7 +154,7 @@ div {
 	flex-direction: column;
 	justify-content: space-evenly;
 	text-align: right;
-	gap: 2rem;
+	gap: 1rem 2rem;
 	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
@@ -65,6 +163,7 @@ div {
 	transform: rotate(-5deg);
 	align-self: center;
 	letter-spacing: 1rem;
+	font-family: 'Sans Forgetica Regular';
 }
 
 .not-found__image {
@@ -85,20 +184,30 @@ div {
 	letter-spacing: 0.2rem;
 }
 
+em {
+	font-weight: bold;
+	color: var(--blue-accent-color);
+}
+
 .not-found__button {
 	font-size: 1.5rem;
 	padding: 0.5rem 1rem;
-	border: 1px solid white;
 	border-radius: 5px;
-	background-color: transparent;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.5);
 	color: white;
 	cursor: pointer;
-	margin: 1rem;
+	margin: 2rem;
 	opacity: 0.8;
 }
 
 .not-found__button:hover {
-	background-color: white;
+	background-color: var(--blue-accent-color);
 	color: black;
 	opacity: 1;
+}
+
+a {
+	text-decoration: none;
+	color: white;
 }

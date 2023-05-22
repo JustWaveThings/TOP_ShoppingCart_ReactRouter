@@ -39,7 +39,7 @@ const router = createBrowserRouter(
 		</Route>
 	),
 	{
-		// basename: 'TOP_ShoppingCart_ReactRouter',
+		basename: '/TOP_ShoppingCart_ReactRouter',
 	}
 );
 

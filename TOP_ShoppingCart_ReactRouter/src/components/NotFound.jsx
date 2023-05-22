@@ -11,7 +11,7 @@ function NotFound() {
 
 					<h1 className="not-found__title"> Shhhhhh... you've found the secret page of our star developer...</h1>
 					<p className="not-found__text">
-						Despite sleeping on the couch most of the day, our star still finds time to do the real coding...
+						Despite sleeping on the couch most of the day, our star still finds time to do the <em> real coding!</em>
 					</p>
 				</div>
 				<img
