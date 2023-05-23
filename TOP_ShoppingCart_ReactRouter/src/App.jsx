@@ -65,7 +65,7 @@ function App() {
   return (
     <RouterProvider
       router={
-        routser
+        router
       }
     ></RouterProvider>
   );
