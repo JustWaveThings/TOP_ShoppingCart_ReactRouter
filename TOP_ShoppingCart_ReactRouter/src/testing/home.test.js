@@ -5,7 +5,7 @@ import {
 } from '@testing-library/react';
 import Home from '../components/Home';
 
-describe('App Component', () => {
+describe('Home Component', () => {
     it('renders the correct heading', () => {
         render(
             <Home />
