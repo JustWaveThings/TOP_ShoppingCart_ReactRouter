@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from "react";
-import forgetfulnessReasons from "../forgetReason";
-import commonlyMisplacedItems from "../forgetItem";
-import randomPlaceForget from "../../utils";
 
-/* const activeIndex = setIndex(Math.floor(Math.random() * commonlyMisplacedItems.length));
-const [index, setIndex] = useState(0); */
 
-/* useEffect(() => {
-		console.log(activeIndex);
-		//randomPlaceForget(forgetfulnessReasons, activeIndex, 'red', 300);
-	}, []); */
+
 
 function Home() {
   return (
