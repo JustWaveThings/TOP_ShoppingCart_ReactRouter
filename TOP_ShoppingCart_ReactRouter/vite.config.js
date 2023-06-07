@@ -10,5 +10,10 @@ export default defineConfig(
                 react(),
                 '@babel/plugin-syntax-jsx',
             ],
+        test: {
+          globals: true,
+          environment: 'jsdom',
+          setupFiles: './src/testing/setup.js'
+  },
     }
 );
